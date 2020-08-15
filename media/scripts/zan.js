@@ -47,9 +47,17 @@ function addcls() {
 }
 
 jQuery(document).ready(function () {
-	jQuery(".layout-post-social").append("<div id='zan' class='item liker'><i class='fa fa-thumbs-o-up' aria-hidden='true'></i><span class='btn-zan' onclick=\"goodplus('" + url + "')\"> 喜欢 </span><span id='zan_text'></span></div>");
+	jQuery(".layout-post-social").append("<div id='zan' class='layout-social-item col-right color-primary'><span class='btn-zan' onclick=\"goodplus('" + url + "')\"> 喜欢 </span><span id='zan_text'></span></div>");
 	senddata(url, flag);
-	jQuery('body').on("click", '.liker', function () {
-		jQuery('.liker').find('.fa').removeClass('fa-thumbs-o-up').addClass('fa-thumbs-up');
+	jQuery('body').on("click", '.heart', function () {
+		jQuery('.heart').css("background-position", "")
+		var wwin = $('.heart').attr("class");
+		if (wwin === 'heart') {
+			$('.heart').addClass("heartAnimation");
+			tui = setTimeout("remcls()", 800)
+		} else {
+			remcls()
+			tuiw = setTimeout("addcls()", 100)
+		}
 	});
 });

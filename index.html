@@ -14,91 +14,50 @@
 <script type="text/javascript" src='https://vsenver-vsenver.github.io/media/scripts/jquery.js'></script>
 <script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
 
-<script>
-    hljs.initHighlightingOnLoad();
-</script>
+<script >hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
 
-    <div class="layout theme-dark">
+    <div class="layout">
 
         <div class="layout-header">
 
 	<div class="layout-header-main">
 		<div class="container">
-			<div class="row justify-content-lg-center">
-				<div class="col-12 col-lg-9">
-
-					<div class="navbar">
-
-						<div class="logo">
-							<a href="https://vsenver-vsenver.github.io">
-								<img class="logo"
-									src="https://vsenver-vsenver.github.io/media/images/site_avatar.png?v=1597502666667"
-									alt="">
-							</a>
-						</div>
-
-						<div class="menu d-md-inline-block d-none">
-							<ul class="layout-navigation-list">
-								
-								<li class="layout-navigation-item"><a title="首页"
-										href="/">首页</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="归档"
-										href="/archives">归档</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="标签"
-										href="/tags">标签</a>
-								</li>
-								
-								<li class="layout-navigation-item"><a title="关于"
-										href="/post/about">关于</a>
-								</li>
-								
-							</ul>
-						</div>
-
-						<div class="item d-md-inline-block d-none">
-							<div class="search-icon">
-								<i class="fa fa-search" aria-hidden="true"></i>
-							</div>
-						</div>
-
-
-
-						<div class="d-md-inline-block d-none">
-							<div class="search-lightbox">
-								<div class="search-body">
-
-									<form id="gridea-search-form" data-update="1597502666667" action="/search/" class="search-form">
-										<input type="text" name="q" id="s" value="" class="search-field" placeholder="请输入搜索关键词" aria-label="请输入搜索关键词" required="">
-										<button type="submit" class="submit" aria-label="Submit">
-											<i class="fa fa-search" aria-hidden="true"></i>
-										</button>
-									</form>
-
-								</div>
-							</div>
-						</div>
-
-						<div class="nav d-md-none d-inline-block">
-							<div class="trigger">
-								<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
-							</div>
-						</div>
-
-					</div>
-
+			<div class="layout-header-logo">
+				<a href="https://vsenver-vsenver.github.io">
+					<img class="logo" src="https://vsenver-vsenver.github.io/media/images/site_avatar.png?v=1597505760740" alt="">
+				</a>
+			</div>
+			<div class="layout-header-menu d-md-inline-block d-none">
+				<ul class="layout-navigation-list">
+					
+					<li class="layout-navigation-item"><a title="首页" href="/">首页</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="归档" href="/archives">归档</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="标签" href="/tags">标签</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="关于" href="/post/about">关于</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="layout-header-item d-none">
+				<span class="layout-header-action layout-header-search">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</span>
+			</div>
+			
+			<div class="layout-header-nav d-md-none d-inline-block">
+				<div class="layout-header-trigger">
+					<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
 				</div>
 			</div>
-
-
-
-
 		</div>
 	</div>
 
@@ -121,75 +80,62 @@
 	</div>
 </div>
 
-        <div class="layout-banner">
-  <div class="layout-banner-main">
-    <div class="container">
-      <div class="row justify-content-lg-center">
-        <div class="col-12 col-lg-9">
-          <div class="banner">
-            <div class="banner-list row">
-              <div class="item col-12 col-sm-9">
-                
-                
-                <div class="banner-card main">
-                  <a class="card-content" href="https://vsenver-vsenver.github.io/post/imac-php-kai-fa-pei-zhi/" style="background-image: url('https://vsenver-vsenver.github.io/post-images/imac-php-kai-fa-pei-zhi.jpg')">
-                    <div class="mask"></div>
-                    <div class="title">
-                      <h3 class="card-title">IMAC PHP开发配置</h3>
-                    </div>
-                  </a>
-                </div>
-                
-                
-                
-              </div>
-              <div class="col-12 col-sm-3">
-                <div class="row">
-                  
-                  
-                  
-                  
-                  <div class="item col-4 col-sm-12">
-                    <div class="banner-card">
-                      <a class="card-content" href="https://vsenver-vsenver.github.io/post/hello-gridea/"
-                        style="background-image: url('https://vsenver-vsenver.github.io/post-images/hello-gridea.png')">
-                        <div class="mask"></div>
-                        <div class="title">
-                          <h3 class="card-title">Hello Gridea</h3>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
+        <div class="layout-swiper">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      
+      
+      <div class="swiper-slide">
+        <a href="https://vsenver-vsenver.github.io/post/imac-php-kai-fa-pei-zhi/">
+          <div class="swiper-img" style="background-image: url('https://vsenver-vsenver.github.io/post-images/imac-php-kai-fa-pei-zhi.jpg')">
           </div>
-        </div>
+          <div class="swiper-slide-mask"></div>
+        </a>
       </div>
+      
+      
+      <div class="swiper-slide">
+        <a href="https://vsenver-vsenver.github.io/post/hello-gridea/">
+          <div class="swiper-img" style="background-image: url('https://vsenver-vsenver.github.io/post-images/hello-gridea.png')">
+          </div>
+          <div class="swiper-slide-mask"></div>
+        </a>
+      </div>
+      
     </div>
+
+    <div class="swiper-button-prev swiper-button d-none d-sm-block">
+      <i class="fa fa-angle-left" aria-hidden='true'></i>
+    </div>
+
+    <div class="swiper-button-next swiper-button d-none d-sm-block">
+      <i class="fa fa-angle-right" aria-hidden='true'></i>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+        <div class="layout-nav d-none d-md-block">
+  <div class="container">
+    <ul class="layout-nav-list">
+      
+      <li class="layout-nav-item"><a href="https://vsenver-vsenver.github.io/tag/uAL4omsw7/" title="Gridea">Gridea</a></li>
+      
+    </ul>
   </div>
 </div>
 
         <div class="layout-content">
   <div class="layout-content-main">
     <div class="container">
-      <div class="row justify-content-lg-center">
-        <div class="col-12 col-lg-9">
-          <div class="card-list">
-            
-            
-            
-            
-            
-            
-            
-          </div>
-
-          
-
-        </div>
+      <div class="row">
+        
+        
+        
+        
+        
       </div>
+      
     </div>
   </div>
 </div>
@@ -201,7 +147,7 @@
     //点击下一页的链接(即那个a标签)
     $(' .btn-paginator').click(function () {
       $this = $(this);
-      $this.addClass('loading').text('正在加载'); //给a标签加载一个loading的class属性，用来添加加载效果
+      $this.addClass('loading').text('正在努力加载'); //给a标签加载一个loading的class属性，用来添加加载效果
       var href = $this.attr('href'); //获取下一页的链接地址
       if (href != undefined) { //如果地址存在
         $.ajax({ //发起ajax请求
@@ -214,8 +160,8 @@
           },
           success: function (data) { //请求成功
             $this.removeClass('loading').text('加载更多'); //移除loading属性
-            var $res = $(data).find('.card'); //从数据中挑出文章数据，请根据实际情况更改
-            $('.card-list').append($res.fadeIn(
+            var $res = $(data).find('.card-list '); //从数据中挑出文章数据，请根据实际情况更改
+            $('.row').append($res.fadeIn(
               500)); //将数据加载加进posts-loop的标签中。
             var newhref = $(data).find('.btn-paginator').attr('href'); //找出新的下一页链接
             if (newhref != undefined) {
@@ -232,52 +178,41 @@
 </script>
 
         	<div class="layout-footer">
+		<div class="layout-footer-main">
+			<div class="container">
 
-		<div class="container">
-			<div class="row justify-content-lg-center">
-				<div class="col-12 col-lg-9">
-					<div class="footer">
-						<div class="row">
-							<div class="col-12 col-md-9">
-								<div class="footer-copy">
-									
-									Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-									<div class="footer-icp d-none d-sm-inline-block">
-										<span class="px-2">⋅</span>
-										
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3 d-none d-md-block">
-								<div class="footer-links">
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="footer-links d-none d-md-block">
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 				</div>
+
+				<div class="footer-copy">
+					
+					Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+				</div>
+
 			</div>
 		</div>
-
 	</div>
 
 	<script type="text/javascript" src='https://vsenver-vsenver.github.io/media/scripts/main.js'></script>
+	<script type="text/javascript" src='https://vsenver-vsenver.github.io/media/scripts/swiper.js'></script>
+	<script type="text/javascript" src='https://vsenver-vsenver.github.io/media/scripts/swiper.min.js'></script>
 	
     </div>
 </body>
