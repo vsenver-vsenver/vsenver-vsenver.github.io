@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-<title>关于 - vsenver</title>
+<title>redis 中Hash数据类型操作 - vsenver</title>
 <meta name="description" content="温故而知新">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -88,12 +88,14 @@
                 <div class="col-md-12 col-lg-10">
                   <div class="layout-post-main m-right m-md-right">
                     <div class="layout-post-header">
-                      <h1 class="layout-post-title">关于</h1>
+                      <h1 class="layout-post-title">redis 中Hash数据类型操作</h1>
                       <div class="layout-post-meta">
                         <div class="layout-meta-list">
-                          <span>2019-01-25</span>
+                          <span>2020-08-25</span>
                         </div>
                         <div class="layout-meta-list">
+                           <a href="https://vsenver-vsenver.github.io/tag/dYVQOpEVm/" class="post--keyword"
+                            data-title="redis" data-type="post_tag" data-term-id="39">redis</a>
                           
                         </div>
                       </div>
@@ -101,20 +103,48 @@
                     <div class="layout-post-content">
                       <div class="layout-post-item">
                         
-                        <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+                        <p>/**<br>
+*</p>
+<ul>
+<li>Hash操作</li>
+<li>哈希操作</li>
+<li>可理解为数据库操作</li>
+<li></li>
+</ul>
+<p>*/</p>
+<p>//为user表中的字段赋值。成功返回1，失败返回0。若user表不存在会先创建表再赋值，若字段已存在会覆盖旧值。<br>
+$redis-&gt;hSet('user', 'name', '222');</p>
+<p>//获取user表中指定字段的值。若user表不存在则返回false。<br>
+$redis-&gt;hGet('user', 'realname');</p>
+<p>//查看user表的某个字段是否存在，存在返回true，否则返回false。<br>
+$redis-&gt;hExists('user', 'realname');</p>
+<p>//删除user表的一个字段，不支持删除多个字段。成功返回1，否则返回0。<br>
+$redis-&gt;hDel('user', '222');</p>
+<p>//同时设置某个user表的多个字段值。成功返回true。<br>
+$redis-&gt;hMset('user', ['name' =&gt; 'jet', 'age' =&gt; 18]);</p>
+<p>//同时获取某个user表的多个字段值。其中不存在的字段值为false。<br>
+$redis-&gt;hMget('user', ['name', 'age']);</p>
+<p>//获取某个user表所有的字段和值。<br>
+$redis-&gt;hGetAll('user');</p>
+<p>//获取某个user表所有字段名。user表不存在时返回空数组，key不为user表时返回false。<br>
+$redis-&gt;hKeys('user');</p>
+<p>//获取某个user表所有字段值。<br>
+$redis-&gt;hVals('user');</p>
+<p>//为user表中不存在的字段赋值。若user表不存在则先创建，若字段已存在则不做任何操作。设置成功返回true，否则返回false。<br>
+$redis-&gt;hSetNx('user', 'realname', 'jetwu');</p>
+<p>//获取某个user表的字段数量。若user表不存在返回0，若user不是hash表则返回false。<br>
+$redis-&gt;hLen('user');</p>
+<p>//为user表中的指定字段加上指定的数值，若user表不存在则先创建，若字段不存在则先初始化值为0再进行操作，若字段值为字符串则返回false。设置成功返回字段新值。<br>
+$redis-&gt;hIncrBy('user', 'age', 10);</p>
+<p>//为user表中的指定字段加上指定浮点数值。<br>
+$redis-&gt;hIncrBy('user', 'age', 1.5);</p>
 
                       </div>
                     </div>
                     <div class="layout-post-social">
                       <div class="layout-social-item">
-                        <div id="/post/about/" class="leancloud-visitors view"
-                          data-flag-title="关于">
+                        <div id="/post/redis-zhong-hash-shu-ju-lei-xing-cao-zuo/" class="leancloud-visitors view"
+                          data-flag-title="redis 中Hash数据类型操作">
                           <span class="post-meta-item-text">阅读 </span>
                           <span class="leancloud-visitors-count"></span>
                         </div>
@@ -123,6 +153,14 @@
 
                     <div class="layout-post-navigation">
                       <div class="row">
+                        
+                        <div class="post-card col-12">
+                          <a href="https://vsenver-vsenver.github.io/post/imac-php-kai-fa-pei-zhi/" class="post-link">
+                            <div class="thumb" style="background-image: url('https://vsenver-vsenver.github.io/post-images/imac-php-kai-fa-pei-zhi.jpg');"></div>
+                            <span class="btn-next"><i class="fa fa-angle-right" aria-hidden='true'></i></span>
+                            <div class="thumb-mask"></div>
+                          </a>
+                        </div>
                         
                       </div>
                     </div>
@@ -135,17 +173,7 @@
                 <div class="col-md-12 col-lg-2 d-none d-lg-block">
                   <div class="layout-post-sidebar">
                     <div class="layout-sidebar-item">
-                      <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
-</ul>
-</li>
-</ul>
-
+                      
                     </div>
                   </div>
                 </div>
