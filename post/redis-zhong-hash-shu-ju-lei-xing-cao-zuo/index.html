@@ -25,7 +25,7 @@
 		<div class="container">
 			<div class="layout-header-logo">
 				<a href="https://vsenver-vsenver.github.io">
-					<img class="logo" src="https://vsenver-vsenver.github.io/media/images/site_avatar.png?v=1598367242520" alt="">
+					<img class="logo" src="https://vsenver-vsenver.github.io/media/images/site_avatar.png?v=1598368282022" alt="">
 				</a>
 			</div>
 			<div class="layout-header-menu d-md-inline-block d-none">
@@ -103,41 +103,54 @@
                     <div class="layout-post-content">
                       <div class="layout-post-item">
                         
-                        <p>/**<br>
-*</p>
-<ul>
-<li>Hash操作</li>
-<li>哈希操作</li>
-<li>可理解为数据库操作</li>
-<li></li>
-</ul>
-<p>*/</p>
-<p>//为user表中的字段赋值。成功返回1，失败返回0。若user表不存在会先创建表再赋值，若字段已存在会覆盖旧值。<br>
-$redis-&gt;hSet('user', 'name', '222');</p>
-<p>//获取user表中指定字段的值。若user表不存在则返回false。<br>
-$redis-&gt;hGet('user', 'realname');</p>
-<p>//查看user表的某个字段是否存在，存在返回true，否则返回false。<br>
-$redis-&gt;hExists('user', 'realname');</p>
-<p>//删除user表的一个字段，不支持删除多个字段。成功返回1，否则返回0。<br>
-$redis-&gt;hDel('user', '222');</p>
-<p>//同时设置某个user表的多个字段值。成功返回true。<br>
-$redis-&gt;hMset('user', ['name' =&gt; 'jet', 'age' =&gt; 18]);</p>
-<p>//同时获取某个user表的多个字段值。其中不存在的字段值为false。<br>
-$redis-&gt;hMget('user', ['name', 'age']);</p>
-<p>//获取某个user表所有的字段和值。<br>
-$redis-&gt;hGetAll('user');</p>
-<p>//获取某个user表所有字段名。user表不存在时返回空数组，key不为user表时返回false。<br>
-$redis-&gt;hKeys('user');</p>
-<p>//获取某个user表所有字段值。<br>
-$redis-&gt;hVals('user');</p>
-<p>//为user表中不存在的字段赋值。若user表不存在则先创建，若字段已存在则不做任何操作。设置成功返回true，否则返回false。<br>
-$redis-&gt;hSetNx('user', 'realname', 'jetwu');</p>
-<p>//获取某个user表的字段数量。若user表不存在返回0，若user不是hash表则返回false。<br>
-$redis-&gt;hLen('user');</p>
-<p>//为user表中的指定字段加上指定的数值，若user表不存在则先创建，若字段不存在则先初始化值为0再进行操作，若字段值为字符串则返回false。设置成功返回字段新值。<br>
-$redis-&gt;hIncrBy('user', 'age', 10);</p>
-<p>//为user表中的指定字段加上指定浮点数值。<br>
-$redis-&gt;hIncrBy('user', 'age', 1.5);</p>
+                        <pre><code>/**
+ *
+ * Hash操作
+ * 哈希操作
+ * 可理解为数据库操作
+ * 
+ */
+
+//为user表中的字段赋值。成功返回1，失败返回0。若user表不存在会先创建表再赋值，若字段已存在会覆盖旧值。
+$redis-&gt;hSet('user', 'name', '222');
+
+//获取user表中指定字段的值。若user表不存在则返回false。
+$redis-&gt;hGet('user', 'realname');
+
+//查看user表的某个字段是否存在，存在返回true，否则返回false。
+$redis-&gt;hExists('user', 'realname');
+
+//删除user表的一个字段，不支持删除多个字段。成功返回1，否则返回0。
+$redis-&gt;hDel('user', '222');
+
+//同时设置某个user表的多个字段值。成功返回true。
+$redis-&gt;hMset('user', ['name' =&gt; 'jet', 'age' =&gt; 18]);
+
+//同时获取某个user表的多个字段值。其中不存在的字段值为false。
+$redis-&gt;hMget('user', ['name', 'age']);
+
+//获取某个user表所有的字段和值。
+$redis-&gt;hGetAll('user');
+
+//获取某个user表所有字段名。user表不存在时返回空数组，key不为user表时返回false。
+$redis-&gt;hKeys('user');
+
+//获取某个user表所有字段值。
+` $redis-&gt;hVals('user');  `
+
+//为user表中不存在的字段赋值。若user表不存在则先创建，若字段已存在则不做任何操作。设置成功返回true，否则返回false。
+$redis-&gt;hSetNx('user', 'realname', 'jetwu');
+
+//获取某个user表的字段数量。若user表不存在返回0，若user不是hash表则返回false。
+$redis-&gt;hLen('user');
+
+//为user表中的指定字段加上指定的数值，若user表不存在则先创建，若字段不存在则先初始化值为0再进行操作，若字段值为字符串则返回false。设置成功返回字段新值。
+$redis-&gt;hIncrBy('user', 'age', 10);
+
+//为user表中的指定字段加上指定浮点数值。
+$redis-&gt;hIncrBy('user', 'age', 1.5);
+
+</code></pre>
 
                       </div>
                     </div>
