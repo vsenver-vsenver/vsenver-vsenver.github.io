@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vsenver-vsenver.github.io</id>
     <title>vsenver</title>
-    <updated>2020-10-23T19:15:56.568Z</updated>
+    <updated>2020-10-23T19:26:16.493Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vsenver-vsenver.github.io"/>
     <link rel="self" href="https://vsenver-vsenver.github.io/atom.xml"/>
@@ -10,6 +10,24 @@
     <logo>https://vsenver-vsenver.github.io/images/avatar.png</logo>
     <icon>https://vsenver-vsenver.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, vsenver</rights>
+    <entry>
+        <title type="html"><![CDATA[MAC PHP开发环境]]></title>
+        <id>https://vsenver-vsenver.github.io/post/mac-php-kai-fa-huan-jing/</id>
+        <link href="https://vsenver-vsenver.github.io/post/mac-php-kai-fa-huan-jing/">
+        </link>
+        <updated>2020-10-23T19:24:53.000Z</updated>
+        <content type="html"><![CDATA[<p>123456</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MACBOOKPRO 13 2020 开箱]]></title>
+        <id>https://vsenver-vsenver.github.io/post/macbookpro-13-2020-kai-xiang/</id>
+        <link href="https://vsenver-vsenver.github.io/post/macbookpro-13-2020-kai-xiang/">
+        </link>
+        <updated>2020-10-23T19:16:34.000Z</updated>
+        <content type="html"><![CDATA[<p>1234</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Linux 常用命令]]></title>
         <id>https://vsenver-vsenver.github.io/post/linux-chang-yong-ming-ling/</id>
@@ -76,12 +94,12 @@ $redis-&gt;hIncrBy('user', 'age', 1.5);
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[IMAC PHP开发配置]]></title>
+        <title type="html"><![CDATA[IMAC 常用软件介绍]]></title>
         <id>https://vsenver-vsenver.github.io/post/imac-php-kai-fa-pei-zhi/</id>
         <link href="https://vsenver-vsenver.github.io/post/imac-php-kai-fa-pei-zhi/">
         </link>
         <updated>2020-08-15T14:28:24.000Z</updated>
-        <content type="html"><![CDATA[<p>1112</p>
+        <content type="html"><![CDATA[<p>123</p>
 ]]></content>
     </entry>
     <entry>
