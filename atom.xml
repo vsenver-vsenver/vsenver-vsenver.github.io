@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vsenver-vsenver.github.io</id>
     <title>vsenver</title>
-    <updated>2020-10-26T07:35:32.183Z</updated>
+    <updated>2020-10-26T07:45:06.494Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vsenver-vsenver.github.io"/>
     <link rel="self" href="https://vsenver-vsenver.github.io/atom.xml"/>
@@ -11,14 +11,20 @@
     <icon>https://vsenver-vsenver.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, vsenver</rights>
     <entry>
-        <title type="html"><![CDATA[Telegram 创建机器人]]></title>
+        <title type="html"><![CDATA[Telegram 使用机器人发送通知]]></title>
         <id>https://vsenver-vsenver.github.io/post/telegram-chuang-jian-ji-qi-ren/</id>
         <link href="https://vsenver-vsenver.github.io/post/telegram-chuang-jian-ji-qi-ren/">
         </link>
         <updated>2020-10-26T07:09:55.000Z</updated>
         <content type="html"><![CDATA[<p>---如题，因为开发程序监控异常，邮件非常麻烦不方便，故而使用telegram机器人功能做故障消息提醒<br>
-一 在telegram的都是框中搜索 @BotFather</p>
+1.创建机器人<br>
+<strong>在telegram的都是框中搜索 @BotFather</strong></p>
 <figure data-type="image" tabindex="1"><img src="https://vsenver-vsenver.github.io/post-images/1603697670863.png" alt="" loading="lazy"></figure>
+<p><strong>点击上图中的 /newbot ，会出现 Alright, a new bot. How are we going to call it? Please choose a name for your bot. 这个是让你给这个机器人起名字</strong><br>
+<img src="https://vsenver-vsenver.github.io/post-images/1603697863688.png" alt="" loading="lazy"><br>
+它说你非常聪明，尽然看得懂英文,再次输入机器人的 @username  以bot 结尾</p>
+<figure data-type="image" tabindex="2"><img src="https://vsenver-vsenver.github.io/post-images/1603698010415.png" alt="" loading="lazy"></figure>
+<p><strong>我图中的秘钥就是机器人做通知的机器上</strong></p>
 ]]></content>
     </entry>
     <entry>
