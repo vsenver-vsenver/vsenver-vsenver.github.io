@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vsenver-vsenver.github.io</id>
     <title>vsenver</title>
-    <updated>2020-10-26T07:53:24.226Z</updated>
+    <updated>2020-10-26T08:05:34.594Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vsenver-vsenver.github.io"/>
     <link rel="self" href="https://vsenver-vsenver.github.io/atom.xml"/>
@@ -30,9 +30,13 @@
 <p>3.获取群组id</p>
 <pre><code>在群组中@ 机器人
 </code></pre>
-<p><img src="https://vsenver-vsenver.github.io/post-images/1603698709936.png" alt="" loading="lazy"><br>
+<p><img src="https://vsenver-vsenver.github.io/post-images/1603698981026.png" alt="" loading="lazy"><br>
 游览器访问  https://api.telegram.org/bot&lt;机器人秘钥&gt;/getUpdates<br>
-<img src="https://vsenver-vsenver.github.io/post-images/1603698800836.png" alt="" loading="lazy"></p>
+带-号的就是群组id了<br>
+4.拿到群组id 然后就可以忘这个群组发消息了<br>
+{&quot;chat_id&quot;: &quot;-群组id&quot;,&quot;text&quot;: &quot;消息&quot;}<br>
+https://api.telegram.org/bot&lt;机器人秘钥&gt;/sendMessage<br>
+使用post 发送请求就可以在群组中接受到机器人的消息</p>
 ]]></content>
     </entry>
     <entry>

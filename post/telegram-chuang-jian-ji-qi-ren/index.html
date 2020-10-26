@@ -25,7 +25,7 @@
 		<div class="container">
 			<div class="layout-header-logo">
 				<a href="https://vsenver-vsenver.github.io">
-					<img class="logo" src="https://vsenver-vsenver.github.io/media/images/site_avatar.png?v=1603698802440" alt="">
+					<img class="logo" src="https://vsenver-vsenver.github.io/media/images/site_avatar.png?v=1603699521823" alt="">
 				</a>
 			</div>
 			<div class="layout-header-menu d-md-inline-block d-none">
@@ -115,9 +115,13 @@
 <p>3.获取群组id</p>
 <pre><code>在群组中@ 机器人
 </code></pre>
-<p><img src="https://vsenver-vsenver.github.io/post-images/1603698709936.png" alt="" loading="lazy"><br>
+<p><img src="https://vsenver-vsenver.github.io/post-images/1603698981026.png" alt="" loading="lazy"><br>
 游览器访问  https://api.telegram.org/bot&lt;机器人秘钥&gt;/getUpdates<br>
-<img src="https://vsenver-vsenver.github.io/post-images/1603698800836.png" alt="" loading="lazy"></p>
+带-号的就是群组id了<br>
+4.拿到群组id 然后就可以忘这个群组发消息了<br>
+{&quot;chat_id&quot;: &quot;-群组id&quot;,&quot;text&quot;: &quot;消息&quot;}<br>
+https://api.telegram.org/bot&lt;机器人秘钥&gt;/sendMessage<br>
+使用post 发送请求就可以在群组中接受到机器人的消息</p>
 
                       </div>
                     </div>
