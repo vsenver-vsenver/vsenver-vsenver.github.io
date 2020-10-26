@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vsenver-vsenver.github.io</id>
     <title>vsenver</title>
-    <updated>2020-10-23T19:27:00.373Z</updated>
+    <updated>2020-10-26T07:35:08.888Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vsenver-vsenver.github.io"/>
     <link rel="self" href="https://vsenver-vsenver.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://vsenver-vsenver.github.io/images/avatar.png</logo>
     <icon>https://vsenver-vsenver.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, vsenver</rights>
+    <entry>
+        <title type="html"><![CDATA[Telegram 创建机器人]]></title>
+        <id>https://vsenver-vsenver.github.io/post/telegram-chuang-jian-ji-qi-ren/</id>
+        <link href="https://vsenver-vsenver.github.io/post/telegram-chuang-jian-ji-qi-ren/">
+        </link>
+        <updated>2020-10-26T07:09:55.000Z</updated>
+        <content type="html"><![CDATA[<p>---如题，因为开发程序监控异常，邮件非常麻烦不方便，故而使用telegram机器人功能做故障消息提醒<br>
+一 在telegram的都是框中搜索 @BotFather</p>
+<figure data-type="image" tabindex="1"><img src="https://vsenver-vsenver.github.io/post-images/1603697670863.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[MAC PHP开发环境]]></title>
         <id>https://vsenver-vsenver.github.io/post/mac-php-kai-fa-huan-jing/</id>
@@ -99,7 +110,7 @@ $redis-&gt;hIncrBy('user', 'age', 1.5);
         <link href="https://vsenver-vsenver.github.io/post/imac-php-kai-fa-pei-zhi/">
         </link>
         <updated>2020-08-15T14:28:24.000Z</updated>
-        <content type="html"><![CDATA[<p>123</p>
+        <content type="html"><![CDATA[<p><strong>1.SwitchHosts</strong></p>
 ]]></content>
     </entry>
     <entry>
@@ -108,12 +119,10 @@ $redis-&gt;hIncrBy('user', 'age', 1.5);
         <link href="https://vsenver-vsenver.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>222<br>
-👏  欢迎使用 <strong>Gridea</strong> ！<br>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>222<br>
-👏  欢迎使用 <strong>Gridea</strong> ！<br>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 <!-- more -->
 <p><a href="https://github.com/getgridea/gridea">Github</a><br>
