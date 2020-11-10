@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vsenver-vsenver.github.io</id>
     <title>vsenver</title>
-    <updated>2020-10-26T08:05:34.594Z</updated>
+    <updated>2020-11-10T15:06:56.555Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vsenver-vsenver.github.io"/>
     <link rel="self" href="https://vsenver-vsenver.github.io/atom.xml"/>
@@ -10,6 +10,41 @@
     <logo>https://vsenver-vsenver.github.io/images/avatar.png</logo>
     <icon>https://vsenver-vsenver.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, vsenver</rights>
+    <entry>
+        <title type="html"><![CDATA[Linux 安装 composer]]></title>
+        <id>https://vsenver-vsenver.github.io/post/linux-an-zhuang-composer/</id>
+        <link href="https://vsenver-vsenver.github.io/post/linux-an-zhuang-composer/">
+        </link>
+        <updated>2020-10-28T16:09:01.000Z</updated>
+        <content type="html"><![CDATA[<p>首先先下载composer.phar<br>
+curl -sS https://getcomposer.org/installer | php</p>
+<p>如果要让composer在任意目录下都可执行，将下载的composer.phar移动至/usr/local/bin，命名为composer即可</p>
+<p>mv composer.phar /usr/local/bin/composer</p>
+<p>如果需要国内镜像 配置国内镜像<br>
+composer config -g repo.packagist composer https://packagist.phpcomposer.com</p>
+<p>执行cpmposer -v 进行确认是否ok</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[宝塔面板安装PHP第三方扩展编译安装-swoole]]></title>
+        <id>https://vsenver-vsenver.github.io/post/bao-ta-mian-ban-an-zhuang-php-di-san-fang-kuo-zhan-bian-yi-an-zhuang-swoole/</id>
+        <link href="https://vsenver-vsenver.github.io/post/bao-ta-mian-ban-an-zhuang-php-di-san-fang-kuo-zhan-bian-yi-an-zhuang-swoole/">
+        </link>
+        <updated>2020-10-28T15:56:23.000Z</updated>
+        <content type="html"><![CDATA[<p>1.下载swoole 源码，解压并进入源码文件夹<br>
+2.执行phpize ，这里根据你需要使用的版本，我这里使用php7.2的版本<br>
+/www/server/php/72/bin/phpize<br>
+<img src="https://vsenver-vsenver.github.io/post-images/1603900714872.png" alt="" loading="lazy"></p>
+<p>3.安装<br>
+也是一样置顶php版本配置文件<br>
+./configure --with-php-config=/www/server/php/72/bin/php-config</p>
+<p><img src="https://vsenver-vsenver.github.io/post-images/1603900775643.png" alt="" loading="lazy"><br>
+<img src="https://vsenver-vsenver.github.io/post-images/1603900796687.png" alt="" loading="lazy"></p>
+<p>执行make 命令  make &amp;&amp; sudo make install</p>
+<p>安装成功后 吧.sp 文件写到置顶php 版本的php.ini 中</p>
+<p>echo &quot;extension = swoole.so&quot; &gt;&gt; /www/server/php/72/etc/php.ini</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Telegram 使用机器人发送通知]]></title>
         <id>https://vsenver-vsenver.github.io/post/telegram-chuang-jian-ji-qi-ren/</id>
@@ -63,7 +98,7 @@ https://api.telegram.org/bot&lt;机器人秘钥&gt;/sendMessage<br>
         <link href="https://vsenver-vsenver.github.io/post/linux-chang-yong-ming-ling/">
         </link>
         <updated>2020-10-23T19:12:10.000Z</updated>
-        <content type="html"><![CDATA[<p>123</p>
+        <content type="html"><![CDATA[<p>centos 更改命令行和界面的模式</p>
 ]]></content>
     </entry>
     <entry>
